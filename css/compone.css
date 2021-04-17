@@ -1,0 +1,567 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot');
+    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body,
+html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #f2ede3;
+    background: #333;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+a:hover {
+    color: #fff;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: fixed
+}
+cover {
+    position: fixed;
+    z-index: 9999;
+    text-align: center;
+    top: 50%;
+    display: block;
+    left: 50%;
+    margin-top: -205px;
+    margin-left: -205px;
+    width: 410px;
+    height: 410px;
+}
+cover .bubble {
+    box-shadow: 2px 2px #222;
+    border-radius: 50% 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 40%;
+}
+cover .bubble.one {
+    background-color: #ca3030;
+    top: 5%;
+    left: 5%;
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -vendor-animation-iteration-count: infinite;
+}
+cover .bubble.two {
+    background-color: white;
+    background-image: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 2s;
+    -vendor-animation-iteration-count: infinite;
+}
+cover .bubble.three {
+    background-color: #4153aa;
+    top: 65%;
+    left: 55%;
+    width: 30%;
+    height: 30%;
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.3s;
+    -vendor-animation-iteration-count: infinite;
+}
+cover .bubble .txt {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    color: #fff;
+    line-height: 100%;
+    top: 35%;
+    height: 100%;
+    display: block;
+    font-size: 300%;
+    width: 100%;
+    font-weight: bold;
+}
+cover .bubble.four {
+    background-color: #ffe550;
+    top: 15%;
+    left: 25%;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    -webkit-animation-delay: 0.3s;
+}
+cover .bubble.five {
+    background-color: #3092ca;
+    top: 75%;
+    left: 15%;
+    width: 10%;
+    height: 10%;
+    overflow: hidden;
+    -webkit-animation-delay: 0.3s;
+}
+.simg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+}
+.bl-main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bl-main > section {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+.bl-main > section:first-child {
+    top: 0;
+    left: 0;
+    background: #F06060;
+}
+.bl-main > section:nth-child(2) {
+    top: 0;
+    left: 50%;
+    background: #FA987D;
+}
+.bl-main > section:nth-child(3) {
+    top: 50%;
+    left: 0;
+    background: #72CCA7;
+}
+.bl-main > section:nth-child(4) {
+    top: 50%;
+    left: 50%;
+    background: #10A296;
+}
+.bl-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 1;
+    /* Centering with flexbox */
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.bl-box h2 {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.bl-icon {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+}
+.bl-icon:before {
+    display: block;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.bl-icon-about:before {
+    content: "\e99f";
+}
+.bl-icon-works:before {
+    content: "\e90e";
+}
+.bl-icon-blog:before {
+    content: "\e926";
+}
+.bl-icon-contact:before {
+    content: "\e9da";
+}
+.bl-main > section .bl-icon-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+}
+.bl-icon-close:before {
+    content: "\ea0d";
+}
+.bl-content,
+div.bl-panel-items > div > div {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    padding: 0 20px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+/* Custom content */
+
+.bl-content p {
+    margin: 0 auto;
+    padding-bottom: 15px;
+    font-size: 1.7em;
+    line-height: 1.8;
+}
+.bl-content h2 {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+.bl-content article {
+    padding: 20px 40px 20px 0px;
+}
+.bl-content article h3 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    padding-top: 20px;
+    font-size: 1.4em;
+}
+.bl-content article a {
+    color: rgba(0, 0, 0, 0.2);
+}
+.bl-content > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* Panel Items */
+
+div.bl-panel-items,
+div.bl-panel-items > div {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+div.bl-panel-items > div > div {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 1;
+    bottom: 90px;
+    top: 90px;
+    pointer-events: auto;
+}
+div.bl-panel-items > div > div h3 {
+    font-size: 2.4em;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+div.bl-panel-items > div > div p {
+    font-size: 1.3em;
+}
+div.bl-panel-items > div > div img {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 50%;
+}
+div.bl-panel-items {
+    top: 100%;
+    z-index: 9999;
+}
+div.bl-panel-items > div {
+    background: #3ba5db;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+    -moz-transform: translateY(0);
+    -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
+    -ms-transform: translateY(0);
+}
+div.bl-panel-items nav {
+    position: fixed;
+    z-index: 99999;
+    width: 216px;
+    left: 50%;
+    bottom: 0px;
+    margin-left: -108px;
+    opacity: 0;
+}
+div.bl-panel-items.bl-panel-items-show nav span {
+    float: left;
+    margin: 5px;
+}
+div.bl-panel-items nav span.bl-next-work {
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: block;
+    text-transform: uppercase;
+    line-height: 2em;
+    cursor: pointer;
+    margin-right: 2em;
+}
+div.bl-panel-items.bl-panel-items-show nav {
+    opacity: 1;
+}
+div.bl-panel-items > div.bl-show-work {
+    z-index: 1000;
+    opacity: 1;
+    -webkit-transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -moz-transform: translateY(-100%);
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    -ms-transform: translateY(-100%);
+}
+div.bl-panel-items > div.bl-hide-current-work {
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    -webkit-transform: translateY(-100%) scale(0.5);
+    -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    -moz-transform: translateY(-100%) scale(0.5);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateY(-100%) scale(0.5);
+    -ms-transform: translateY(-100%) scale(0.5);
+    z-index: 0;
+}
+/* Transition classes and properties */
+/* Separated for a better overview and control */
+
+.bl-main > section {} .bl-main > section.bl-expand {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.bl-main > section.bl-expand-top {
+    z-index: 100;
+}
+.bl-main > section:first-child.bl-expand {
+    background: #EE4444;
+}
+.bl-main > section:nth-child(2).bl-expand {
+    background: #F98262;
+}
+.bl-main > section:nth-child(3).bl-expand {
+    background: #4BBE8E;
+}
+.bl-main > section:nth-child(4).bl-expand {
+    background: #0D8278;
+}
+.bl-main.bl-expand-item {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+.bl-main.bl-expand-item > section:not(.bl-expand),
+.bl-main.bl-expand-item > section.bl-scale-down {
+    display: none;
+    opacity: 0;
+}
+.bl-box {} section.bl-expand .bl-box {
+    opacity: 0;
+    display: none;
+}
+.bl-box h2 {} .no-touch section:not(.bl-expand) .bl-box:hover h2 {} .bl-content,
+.bl-icon-close {} section.bl-expand .bl-content,
+section.bl-expand .bl-icon-close {
+    pointer-events: auto;
+    opacity: 1;
+}
+/* Basic jQuery Slider essential styles */
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+.simg {
+    background-color: #000;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 350px;
+    background-position: center center;
+    background-size: contain;
+}
+.caption {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    text-align: center;
+    background: #000;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+}
+@media screen and (max-width: 66.5em) {
+    cover {
+        width: 300px;
+        height: 300px;
+        margin-top: -150px;
+        margin-left: -150px;
+    }
+    cover .bubble .txt {
+        font-size: 200%;
+    }
+}
+@media screen and (max-width: 46.5em) {
+    .bl-content,
+    .bl-box {
+        font-size: 75%;
+    }
+    cover .bubble .txt {
+        font-size: 150%;
+    }
+    div.bl-panel-items > div > div img {
+        width: 100%;
+    }
+    cover {
+        position: fixed;
+        z-index: 9999;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        margin-top: -125px;
+        margin-left: -125px;
+    }
+    cover img {
+        width: 250px;
+        height: 250px;
+    }
+    .bl-expand .bl-box {
+        height: 130px;
+    }
+}
+@media screen and (max-width: 26.5em) {
+    .bl-box {
+        font-size: 50%;
+    }
+    cover {
+        width: 200px;
+        height: 200px;
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+    cover img {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-height: 26.5em) {
+    .bl-content,
+    .bl-box {
+        font-size: 70%;
+    }
+    cover .bubble .txt {
+        font-size: 80%;
+    }
+    cover {
+        position: fixed;
+        z-index: 9999;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        margin-top: -75px;
+        margin-left: -75px;
+    }
+    .bl-expand .bl-box {
+        height: 130px;
+    }
